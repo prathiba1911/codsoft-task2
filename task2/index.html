@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgerbees Landing Page</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container">
+            <a href="#" class="brand">BurgerBees.</a>
+            <ul class="nav-links">
+                <li class="active"><a href="#hero">Home</a></li>
+                <li><a href="#services">About us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#ct">Testimonials</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!--//Navbar -->
+    
+    <!-- Hero -->
+    <div id="hero">
+        <div class="container">
+            <h1 class="heading-xl"><span id="hero-titles"></span></h1>
+            <a href="#services" class="scroll-to-down"><i class="las la-arrow-down"></i></a>
+        </div>
+    </div>
+    <!-- //Hero -->
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <div class="section-intro" data-aos="fade-up">
+                <h1 class="heading-2">About Us</h1>
+            </div>
+            <div class="grid three-col-grid">
+                <div class="service" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon"><i class="las la-book"></i></div>
+                    <h3 class="heading-3">Our Story</h3>
+                    <p>BurgerBees was founded in 2024 by PrathiBee, a passionate food enthusiast with a vision of reinventing the burger experience.Bee grew up savoring the delicious flavors of homemade burgers, and that nostalgia inspired the creation of BurgerBees.</p>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="600">
+                    <div class="icon"><i class="las la-feather"></i></div>
+                    <h3 class="heading-3">Our Philosophy</h3>
+                    <p>We believe that a great burger should not only tantalize your taste buds but also tell a story. That's why we source the finest ingredients, from locally grown produce to premium plant-based alternatives, to ensure that each burger is a masterpiece in itself.</p>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="900">
+                    <div class="icon"><i class="las la-tree"></i></div>
+                    <h3 class="heading-3">Our Commitment to Sustainability</h3>
+                    <p>BurgerBees is more than just a burger joint; we're stewards of the environment. We're committed to sustainable practices, from sourcing ingredients responsibly to reducing waste through composting and recycling. We believe that every delicious bite should leave a positive impact on our planet.</p>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon"><i class="las la-pencil-ruler"></i></div>
+                    <h3 class="heading-3">Community Involvement</h3>
+                    <p>BurgerBees is proud to be an active member of the community. We regularly participate in local events, sponsor youth sports teams, and support charitable organizations. Our aim is to give back to the community that has embraced us.</p>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="600">
+                    <div class="icon"><i class="lab la-gg"></i></div>
+                    <h3 class="heading-3">Our Team</h3>
+                    <p>Our dedicated team of chefs, servers, and staff are the backbone of BurgerBees. They share a passion for food and a commitment to delivering exceptional service. Together, we strive to make every visit to BurgerBees a memorable one.</p>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="900">
+                    <div class="icon"><i class="las la-marker"></i></div>
+                    <h3 class="heading-3">Customer Satisfaction</h3>
+    <p>At BurgerBees, customer satisfaction is our top priority. We strive to create an exceptional dining experience by ensuring prompt service, maintaining high cleanliness standards, and listening attentively to our customers' feedback. Your enjoyment and satisfaction with every visit are what drive us to continually improve and innovate.</p>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //Services -->
+
+ <!-- Menu -->
+ <section id="menu">
+    <div class="container">
+        <div class="section-intro" data-aos="fade-up">
+            <h1 class="heading-2">Our menu</h1>
+        </div>
+      
+        <style>
+            .menu-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                padding: 5px;
+            }
+
+            .menu-item {
+                flex: 0 1 calc(32% - 5px); 
+                background-color: #fff;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                overflow: hidden;
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+
+           
+
+            .item-image img {
+    width: 100%;
+    height: auto;
+   
+    border-radius: 5px 5px 0 0;
+}
+
+            .item-details {
+                padding: 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                color: red;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: #333;
+                margin-bottom: 15px;
+            }
+
+            .price {
+                font-weight: bold;
+                color: #fca311;
+                margin-bottom: 10px;
+            }
+
+            .add-to-cart {
+                display: block;
+                width: 100%;
+                padding: 10px 0;
+                background-color: #de7728;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                
+            }
+
+            .add-to-cart:hover {
+                background-color: #6a0000;
+            }
+        </style>
+
+        <div class="menu-container">
+            <section class="menu-item" data-id="1">
+                <div class="item-image">
+                    <img src="burger1.jpeg" alt="Veg Bee Burger">
+                </div>
+                <div class="item-details">
+                    <h2>Veg Bee Burger</h2>
+                    <p>Bees signature burger with Veg patty, onion, lettuce and two sauces.</p>
+                    <p class="price">Rs 150</p>
+                    <a href="#" class="add-to-cart">Order now!</a>
+                </div>
+            </section>
+
+            <section class="menu-item" data-id="2">
+                <div class="item-image">
+                    <img src="burger2.jpeg" alt="Veg Zinger Burger">
+                </div>
+                <div class="item-details">
+                    <h2>Veg Zinger Burger</h2>
+                    <p>Bees signature Veg burger with crispy patties, veggies and a tangy sauce.</p>
+                    <p class="price">Rs 165</p>
+                    <a href="#" class="add-to-cart">Order now!</a>
+                </div>
+            </section>
+
+            <section class="menu-item" data-id="3">
+                <div class="item-image">
+                    <img src="burger3.jpg" alt="Veg Zinger Burger With Cheese">
+                </div>
+                <div class="item-details">
+                    <h2>Veg Cheese Zinger Burger</h2>
+                    <p>Bees signature Veg burger with crispy patties, veggies, a tangy sauce and a cheese slice.</p>
+                    <p class="price">Rs 175</p>
+                    <a href="#" class="add-to-cart">Order now!</a>
+                </div>
+            </section>
+
+            <section class="menu-item" data-id="5">
+                <div class="item-image">
+                    <img src="burger5.jpeg" alt="Double Veg Krisper Burger">
+                </div>
+                <div class="item-details">
+                    <h2>Double Veg Krisper Burger</h2>
+                    <p>Bees Signature Veg burger with double crispy patties.</p>
+                    <p class="price">Rs 200</p>
+                    <a href="#" class="add-to-cart">Order now!</a>
+                </div>
+            </section>
+
+            <section class="menu-item" data-id="7">
+                <div class="item-image">
+                    <img src="burger7.jpeg" alt="Chicken Bee Burger">
+                </div>
+                <div class="item-details">
+                    <h2>Chicken Bee Burger</h2>
+                    <p>Bees signature burger with a crunchy chicken patty, veggies and a punchy sauce.</p>
+                    <p class="price">Rs 170</p>
+                    <a href="#" class="add-to-cart">Order now!</a>
+                </div>
+            </section>
+
+            <section class="menu-item" data-id="8">
+                <div class="item-image">
+                    <img src="burger8.jpeg" alt="Chicken Zinger Burger">
+                </div>
+                <div class="item-details">
+                    <h2>Chicken Zinger Burger</h2>
+                    <p>Bees Signature burger made with a crunchy chicken patty, veggies and a delicious mayo sauce.</p>
+                    <p class="price">Rs 180</p>
+                    <a href="#" class="add-to-cart">Order now!</a>
+                </div>
+            </section>
+
+            <section class="menu-item" data-id="9">
+                <div class="item-image">
+                    <img src="burger9.jpeg" alt="Chicken Zinger Burger With Cheese">
+                </div>
+                <div class="item-details">
+                    <h2>Chicken Zinger Burger With Cheese</h2>
+                    <p>Bees signature burger made with a crunchy chicken patty, veggies and a cheese slice.</p>
+                    <p class="price">Rs 190</p>
+                    <a href="#" class="add-to-cart">Order now!</a>
+                </div>
+            </section>
+
+            <section class="menu-item" data-id="10">
+                <div class="item-image">
+                    <img src="burger10.jpeg" alt="Chicken Krisper Burger">
+                </div>
+                <div class="item-details">
+                    <h2>Chicken Krisper Burger</h2>
+                    <p>Signature chicken burger with crispy patties and cheese slice.</p>
+                    <p class="price">Rs 205</p>
+                    <a href="#" class="add-to-cart">Order now!</a>
+                </div>
+            </section>
+            <section class="menu-item" data-id="11">
+                <div class="item-image">
+                    <img src="burger11.jpeg" alt="Double Chicken Krisper Burger">
+                </div>
+                <div class="item-details">
+                    <h2>Double Chicken Krisper Burger</h2>
+                    <p>Signature chicken burger with double crispy patties and cheese slice.</p>
+                    <p class="price">Rs 220</p>
+                    <a href="#" class="add-to-cart">Order now!</a>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<!-- //Menu -->
+
+ 
+<!-- Customer Testimonials -->
+<section id="ct">
+    <div class="container">
+        <div class="section-intro" data-aos="fade-up">
+            <h1 style="font-size: 36px;">Customer Testimonials</h1>
+        </div>
+        <div class="grid three-col-grid">
+            <div class="cus" data-aos="flip-left" data-aos-delay="300">
+                <img src="./images/cus1.jpg" alt="Discover the Secret of Burger Bees">
+                <h3><a href="#">Friends' Favorite: Our Burger Bees Experience</a></h3>
+                <p>"Burger Bees is our go-to spot for delicious burgers! The honey-infused flavors are simply unbeatable. It's our favorite hangout!"</p>
+            </div>
+            <div class="cus" data-aos="flip-left" data-aos-delay="600">
+                <img src="./images/cus2.jpg" alt="Burger Bees: A Taste Adventure">
+                <h3><a href="#">Nishant's Burger Bees Experience: A Flavorful Journey</a></h3>
+                <p>"I've tried burgers from all over, but nothing comes close to Burger Bees. The blend of flavors and quality ingredients make every visit a treat. Highly recommend!"</p>
+            </div>
+            <div class="cus" data-aos="flip-left" data-aos-delay="900">
+                <img src="./images/cus3.jpg" alt="Behind the Scenes at Burger Bees">
+                <h3><a href="#">Jessica's Delight: A Taste of Burger Bees</a></h3>
+                <p>"Burger Bees has won my heart with their incredible burgers! Each bite is a journey of flavors. It's my go-to place for a satisfying meal!"</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //Customer Testimonials -->
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>All rights reserved by Burger Bees@2024 </a></p>
+            </div>
+        </div>
+    </footer>
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+ 
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
